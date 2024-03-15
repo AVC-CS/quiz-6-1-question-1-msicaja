@@ -42,8 +42,8 @@ int getNextPrime(int i) {
 int getPrevPrime(int num) {
     int i, j, prime;
 
-    for (i = num; i > 0; ++i) {
-        for (j = 0; j < i; ++j) {
+    for (i = num; i > 0; --i) {
+        for (j = 2; j < i; ++j) {
             if (i % j == 0) {
                 break;
             }
