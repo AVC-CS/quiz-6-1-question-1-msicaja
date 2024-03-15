@@ -13,11 +13,15 @@ void getTwoValues(int &, int &);
 // Implement all your functions here
 // ******************************
 void getTwoValues(int &x, int &y) {
-    cin >> x >> y;
+    do {
+        cin >> x >> y;
+    } while (x >= y);
 }
 
 int getNextPrime(int i) {
     int j, prime;
+
+    ++i;
 
     while (1) {
         for (j = 2; j < i; ++j) {
